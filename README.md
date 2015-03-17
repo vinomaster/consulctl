@@ -1,6 +1,6 @@
 # consulctl
 Basic command line utility for [Consul.io](http://www.consul.io) Key/Value Store. 
-It can be used in scripts or for administrators to explore an Consul cluster.
+It can be used in scripts or for administrators to explore a Consul cluster.
 
 ## Usage
 
@@ -53,6 +53,13 @@ Get the current value for a single key in cluster:
 
 ```
 $ python consulctl.py get /foo/bar
+Hello world
+```
+
+Get the current value for a single key a cluster with a specific agent address:
+
+```
+$ python consulctl.py -a http://172.17.41.28:8500 get /foo/bar
 Hello world
 ```
 
@@ -119,6 +126,20 @@ $ python consulctl.py rmdir /path/to/dir
 ### Motivation
 
 Inspired by [etcdctl](https://github.com/coreos/etcd/tree/master/etcdctl) which is a command line client for [etcd](https://github.com/coreos/etcd). 
+
+### Installation
+
+```consulctl``` is a Python utility. It can be installed directly from [GitHub](https://github.com/vinomaster/consulctl.git).
+
+### Dependencies
+
+```consulctl``` has the following runtime dependences:
+
+1. Python 2.7.6
+2. [python-consul](http://python-consul.readthedocs.org/en/latest/) 
+```
+$ pip install python-consul
+```
 
 ### License
 
