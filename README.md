@@ -2,6 +2,12 @@
 Basic command line utility for [Consul.io](http://www.consul.io) Key/Value Store. 
 It can be used in scripts or for administrators to explore a Consul cluster.
 
+## Dependencies
+
+```
+$ pip install requests
+```
+
 ## Usage
 
 ```
